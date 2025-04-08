@@ -26,4 +26,8 @@
     ul{
         text-align: center;
     }
+
+    aside{
+       padding-left: 50px;
+    }
 }
