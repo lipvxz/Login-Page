@@ -1,4 +1,5 @@
 body{
+
     background-color: rgb(34, 34, 34);
     color: white;
     font-family: poppinsregular;
@@ -55,21 +56,31 @@ main{
     flex-direction: row;
     margin-top: 50px;
 }
-
-h2{
-    font-size: 56px;
-    line-height: 10px;
+h2 {
+    font-size: clamp(24px, 5vw, 56px); /* Tamanho responsivo para diferentes tamanhos de tela */
+    line-height: 0.9; /* Altura apropriada entre linhas */
     font-family: poppinsmedium;
+    text-align: justify; /* Centraliza o texto */
+    margin: 20px auto; /* Adiciona espaço entre os cabeçalhos */
 }
+
+
 span{
     color: rgb(73, 180, 237);
 }
 
-p{
-    line-height: 20px;
-    max-width: 500px;
-    font-family: poppinslight;
+p {
+    font-size: 16px; /* Tamanho fixo do texto */
+    letter-spacing: 1px; /* Espaçamento entre os caracteres */
+    line-height: 1.5; /* Altura relativa suficiente para evitar sobreposição */
+    max-width: 500px; /* Limita a largura do parágrafo */
+    font-family: poppinslight; /* Fonte definida */
+    text-align: justify; /* Centraliza o texto */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    word-wrap: break-word; /* Garante que as palavras longas quebrem corretamente */
 }
+
+
 article{
     width: 40%;
     height: auto;
@@ -107,3 +118,18 @@ input {
     font-size: 20px;
     outline: none;
   }
+
+  #hamburger-menu {
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+#hamburger-toggle{
+    display: none;
+}
+
+.hamburger-menu {
+    display: none; /* Oculta o menu hambúrguer */
+}
+

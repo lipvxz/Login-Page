@@ -16,7 +16,16 @@
             <h1>Brain</h1>
             <h1> Digital</h1>
         </div>
+        <button id="hamburger-menu" aria-label="Abrir menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
 
+          <input type="checkbox" id="hamburger-toggle" class="hidden-checkbox">
+          <label for="hamburger-toggle" class="hamburger-menu">☰</label>
+          
+          <nav id="menu">
         <ul>
             <a href="#"><li>Inicio</li></a>
             <a href="#"><li>Serviços</li></a>
@@ -24,6 +33,16 @@
             <a href="#"><li>Contato</li></a>
             <a href="#" id="inscreva-se-btn"><li>Já tem uma conta?</li></a>
         </ul>
+        </nav>
+        
+        <nav id="menu">
+            <label for="toggle-menu" id="close-menu">X</label>
+            <!-- Outros itens do menu -->
+        </nav>
+        
+        <!-- Checkbox para controlar o estado do menu -->
+        <input type="checkbox" id="toggle-menu" hidden>
+        
     </header>
 
     <main>
