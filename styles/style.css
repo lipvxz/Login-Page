@@ -3,7 +3,8 @@ body{
     background-color: rgb(34, 34, 34);
     color: white;
     font-family: poppinsregular;
-    max-width: 1200px;
+    width: 100vw; /* Ocupe a largura total da viewport */
+    overflow-x: hidden; /* Impede barra de rolagem horizontal */
     margin: 0 auto;
     padding: 15px;
 }
@@ -15,17 +16,40 @@ header{
     align-items: center;
 }
 
-#title{
-    flex-direction: column;
-    line-height: 10px; 
-}
-
 li{
     display: inline-block;
     margin: 20px;
 
 }
 
+#container {
+    display: flex; /* Define o layout flexível para o container */
+    justify-content: space-between; /* Espaça o título e o menu */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    padding: 10px 20px; /* Adiciona espaço interno */
+    background-image: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), 
+                      url(https://images.alphacoders.com/654/thumb-350-654171.webp);
+    background-size: cover;
+   
+    width: 100%;
+}
+
+#menu {
+    display: flex; /* Organiza os itens do menu horizontalmente */
+    list-style: none; /* Remove os marcadores da lista */
+    margin-left: auto;
+    margin: 0; /* Remove margens externas */
+}
+
+#menu ul {
+    display: flex; /* Deixa os itens do menu em linha */
+    justify-content: flex-end; /* Alinha os itens ao lado direito */
+    align-items: center; /* Centraliza verticalmente os itens do menu */
+    gap: 20px; /* Espaço entre os itens */
+    list-style: none; /* Remove marcadores da lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+}
 a{
     color: white;
 }
@@ -49,6 +73,7 @@ a:hover{
 
 h1{
     font-weight: 200;
+    margin: 0;
 }
 
 main{
@@ -88,9 +113,6 @@ article{
 img {
     width: 100%; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção original */
-    margin-top: -35px;
-    margin-left: 100px;
-   
   }
 
   form {
@@ -129,5 +151,26 @@ input {
 
 .hamburger-menu {
     display: none; /* Oculta o menu hambúrguer */
+}
+
+.title {
+    display: flex; /* Define um layout flexível */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 15px;
+}
+
+.text-column {
+    display: flex; /* Define um layout flexível */
+    flex-direction: column; /* Alinha o texto em uma coluna vertical */
+    text-align: left; /* Opcional: alinha o texto à esquerda */   
+}
+
+.title img {
+    width: 125px; /* Ajuste o tamanho da imagem */
+}
+
+body.index{
+    margin: 0;
+    padding: 0;
 }
 
