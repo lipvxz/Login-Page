@@ -35,10 +35,6 @@ p {
     margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
 }
 
-
-
-    
-    
     input{
         align-self: center;
     
@@ -51,9 +47,6 @@ p {
         text-align: center;
     }
 
-    aside{
-       padding-left: 50px;
-    }
     .hamburger-menu{
     margin-left: auto; /* Move para a esquerda */
     margin-top: -70px;
